@@ -1,5 +1,6 @@
 # flash-zale-addon
-Add-on for FIREFOX
+Flash Sale Add-on for FIREFOX
+Simple Grab/Refresh Flash sale products off e-commerce webpages.
 
 ## Usage
 > Click the Add-on icon visible in the toolbar to start/stop.
