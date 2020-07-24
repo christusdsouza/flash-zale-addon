@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "zFlash Sale OP",
+  "version": "1.0",
+  "description": "Normie refresh tool...\nDiscord handle: Christus77Player#2233    *jeez dont spam it FFS*",
+  "icons": {
+    "48": "icons/icon.svg",
+    "96": "icons/icon.svg"
+  },
+  "background": {
+  "scripts": ["do.js"]
+},
+  "permissions": [
+    "storage",
+    "notifications"
+  ],
+  "browser_action": {
+    "default_icon": "icons/play.svg",
+    "default_title": "FlashZale\n(Double-Click to Activate)"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "zFlashSale@mozilla.org"
+    }
+  }
+}
