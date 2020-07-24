@@ -7,17 +7,16 @@ browser.browserAction.onClicked.addListener((tab) => {
             "title": "FlashZale",
             "message": "clicked; Refresh starts in 10s"
         });
-        flag = 0;
         browser.browserAction.setIcon({
             "path": "icons/stop.svg",
             "tabId": tab.id
         });
+        flag = 0;
         //intervalID = 
         window.setInterval(() => {
             browser.tabs.reload()
                 .catch(err => { console.log(err); });
         },10000);
-        console.log(intervalID);
     } else {
         browser.notifications.create({
             "type": "basic",
@@ -29,6 +28,6 @@ browser.browserAction.onClicked.addListener((tab) => {
             "tabId": tab.id
         });
         flag = 1;
-        //auto clears the interval LOL
+        //No clearinterval() as this auto clears the interval LOL
     }
 })
