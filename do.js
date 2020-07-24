@@ -9,7 +9,8 @@ browser.browserAction.onClicked.addListener((tab) => {
         });
         flag = 0;
         browser.browserAction.setIcon({
-            "path": "icons/stop.svg"
+            "path": "icons/stop.svg",
+            "tabId": tab.id
         });
         //intervalID = 
         window.setInterval(() => {
