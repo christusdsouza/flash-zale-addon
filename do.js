@@ -1,4 +1,4 @@
-let flag = 1;  //,intervalID;
+let flag = 1, intervalID;
 browser.browserAction.onClicked.addListener((tab) => {
     activeTab = tab.id;
     if (flag == undefined || flag == 1) {
@@ -9,11 +9,9 @@ browser.browserAction.onClicked.addListener((tab) => {
         });
         browser.browserAction.setIcon({
             "path": "icons/stop.svg",
-            "tabId": tab.id
         });
         flag = 0;
-        //intervalID = 
-        window.setInterval(() => {
+        intervalID = setInterval(() => {
             browser.tabs.reload()
                 .catch(err => { console.log(err); });
         },10000);
@@ -25,9 +23,8 @@ browser.browserAction.onClicked.addListener((tab) => {
         });
         browser.browserAction.setIcon({
             "path": "icons/play.svg",
-            "tabId": tab.id
         });
         flag = 1;
-        //No clearinterval() as this auto clears the interval LOL
+        clearInterval(intervalID);
     }
-})
+});
