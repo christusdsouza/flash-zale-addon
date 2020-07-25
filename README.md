@@ -23,3 +23,5 @@ Simple Grab/Refresh Flash sale products off e-commerce webpages.
 + JSON configurations(interval, reload the tab where add-on gets activated(hooked)).
 + Automatically detect and stop when the Tab navigates to another page, eg: Cart or Order/Delivery Process.
 + Support for Chrome
+
+##### Feedbacks are welcomed...
