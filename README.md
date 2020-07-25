@@ -11,7 +11,7 @@ Simple Grab/Refresh Flash sale products off e-commerce webpages.
 > - Refreshes from cache for faster loading time.
 
 ## Installation
-1. Clone this repository.
+1. Clone this repository or Download it. {extract the .zip after download}
 2. In Firefox, goto `about:debugging` >> "This Firefox" and Click on "Load Temporary Add-ons"
 3. Browse to the directory where you cloned/downloaded the repository files and open it.
 4. The add-on should get loaded into the browser for the current runtime('Temporary Add-on').
