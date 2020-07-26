@@ -10,10 +10,7 @@
   "background": {
   "scripts": ["do.js"]
 },
-  "permissions": [
-    "storage",
-    "notifications"
-  ],
+  "permissions": ["notifications"],
   "browser_action": {
     "default_icon": "icons/play.svg",
     "default_title": "FlashZale\n(Double-Click to Activate)"
